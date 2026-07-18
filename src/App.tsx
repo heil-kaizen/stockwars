@@ -50,7 +50,7 @@ export default function App() {
         </div>
         
         <div className="flex items-center gap-4">
-          <a href="https://x.com" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-[#ccff00] transition-colors">
+          <a href="https://x.com/Stonkwarz15" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-[#ccff00] transition-colors">
             <TwitterIcon className="w-5 h-5" />
           </a>
         </div>
@@ -76,7 +76,7 @@ export default function App() {
         </div>
         <div className="flex gap-4 md:gap-6 items-center">
           <span className="hidden sm:inline">Latency: 24ms</span>
-          <a href="https://x.com" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-[#ccff00] transition-colors flex items-center gap-2">
+          <a href="https://x.com/Stonkwarz15" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-[#ccff00] transition-colors flex items-center gap-2">
             <span className="hidden sm:inline font-sans font-bold">Follow on</span> <TwitterIcon className="w-4 h-4" />
           </a>
         </div>
