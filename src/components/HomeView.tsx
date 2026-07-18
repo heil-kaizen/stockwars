@@ -37,7 +37,7 @@ export function HomeView({ onNavigate }: { onNavigate: () => void }) {
         </h1>
         
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed mt-4">
-          The next evolution of global trading. Access the top 15 largest traditional market assets via high-performance tokenized infrastructure. 
+          The next evolution of global trading. Access all the available top stocks in the market via high-performance tokenized infrastructure. 
           Trade top-tier equities with instant settlement, cross-chain composability, and institutional-grade liquidity.
         </p>
 

@@ -40,9 +40,9 @@ export function WhitepaperView() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4 uppercase tracking-wider">3. The Top 15 Index</h2>
+            <h2 className="text-2xl font-bold text-white mb-4 uppercase tracking-wider">3. Top Market Equities</h2>
             <p>
-              We strategically selected the top 15 technology, AI, and global leaders—including NVIDIA, Apple, Alphabet, 
+              We strategically selected all the available top technology, AI, and global leaders in the market—including NVIDIA, Apple, Alphabet, 
               and TSMC—due to their immense market capitalization and high liquidity. This curated list focuses the 
               liquidity of the decentralized market onto the most robust and highly demanded global equities.
             </p>
