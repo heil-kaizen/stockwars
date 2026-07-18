@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect width="200" height="200" fill="#000000" rx="40"/>
+  <rect width="200" height="200" fill="#060b16" rx="40"/>
   <!-- Abstract S & W overlapping trending chart -->
   <path d="M 60 140 L 100 60 L 140 140" stroke="#ccff00" stroke-width="20" fill="none" stroke-linejoin="bevel" />
   <path d="M 40 100 L 100 40 L 160 100" stroke="#ccff00" stroke-width="20" fill="none" stroke-linejoin="bevel" />
