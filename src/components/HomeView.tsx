@@ -6,7 +6,7 @@ import { TopStocksTicker } from './TopStocksTicker';
 
 export function HomeView({ onNavigate }: { onNavigate: () => void }) {
   const [is_copied, set_is_copied] = useState(false);
-  const platform_contract = "COMING SOON";
+  const platform_contract = "0x8d104de1d94b9f08f96877ccc1dd0c99757a2743";
 
   const handle_copy = async () => {
     const success = await execute_clipboard_copy(platform_contract);
