@@ -43,28 +43,28 @@ export function HomeView({ onNavigate }: { onNavigate: () => void }) {
 
         <TopStocksTicker />
 
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12 mt-12 w-full md:items-end">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 mt-10 w-full items-start md:items-end">
           <button 
             onClick={onNavigate}
-            className="bg-[#ccff00] text-black px-8 py-5 font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-transform cursor-pointer flex items-center justify-center gap-2 w-full md:w-auto h-fit mb-1"
+            className="bg-[#ccff00] text-black px-8 font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-transform cursor-pointer flex items-center justify-center gap-2 w-full md:w-auto h-[60px] shrink-0"
           >
             Enter Markets <ArrowRight size={20} />
           </button>
           
-          <div className="flex-1 w-full max-w-md">
-            <p className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-3">Official Platform Contract</p>
-            <div className="bg-[#0a1224]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-4 sm:p-5 flex flex-col items-start gap-4">
-              <div className="w-full overflow-hidden">
-                <p className="text-lg font-mono font-bold tracking-tight text-[#ccff00] truncate">
+          <div className="flex-1 w-full max-w-lg">
+            <p className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-2 pl-1">Official Platform Contract</p>
+            <div className="bg-[#0a1224]/80 backdrop-blur-xl border border-white/10 rounded-xl p-2 pl-4 flex flex-row items-center gap-3 h-[60px]">
+              <div className="overflow-hidden flex-1">
+                <p className="text-sm md:text-base font-mono font-bold tracking-tight text-[#ccff00] truncate">
                   {platform_contract}
                 </p>
               </div>
               <button 
                 onClick={handle_copy}
-                className="w-full px-6 py-2.5 bg-white/5 border border-white/10 text-white font-bold uppercase tracking-widest text-[10px] rounded-lg hover:bg-white/10 transition-colors cursor-pointer flex items-center justify-center gap-2 shrink-0"
+                className="px-4 py-0 bg-white/5 border border-white/10 text-white font-bold uppercase tracking-widest text-[10px] rounded-lg hover:bg-white/10 transition-colors cursor-pointer flex items-center justify-center gap-2 shrink-0 h-full"
               >
-                {is_copied ? <Check size={16} /> : <Copy size={16} />}
-                {is_copied ? 'Copied' : 'Copy Address'}
+                {is_copied ? <Check size={14} /> : <Copy size={14} />}
+                <span className="hidden sm:inline">{is_copied ? 'Copied' : 'Copy'}</span>
               </button>
             </div>
           </div>
