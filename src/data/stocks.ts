@@ -7,7 +7,7 @@ export const market_assets: TokenizedStock[] = [
     company_name: "NVIDIA Corp.",
     current_price: 135.58,
     change_percentage: 2.45,
-    token_address: "COMING SOON",
+    token_address: "0xd1b64adbce7d03b2c8eef8206f6c756abe5a1089",
     market_capitalization: "$3.3T",
     trading_volume_24h: "450M"
   },
@@ -17,7 +17,7 @@ export const market_assets: TokenizedStock[] = [
     company_name: "Apple Inc.",
     current_price: 215.11,
     change_percentage: 0.85,
-    token_address: "COMING SOON",
+    token_address: "0xfbc2be43e25135287996434579553b5dc73772fb",
     market_capitalization: "$3.2T",
     trading_volume_24h: "200M"
   },
@@ -27,7 +27,7 @@ export const market_assets: TokenizedStock[] = [
     company_name: "Microsoft Corp.",
     current_price: 450.21,
     change_percentage: 1.15,
-    token_address: "COMING SOON",
+    token_address: "Microsoft Corp",
     market_capitalization: "$3.3T",
     trading_volume_24h: "180M"
   },
@@ -37,7 +37,7 @@ export const market_assets: TokenizedStock[] = [
     company_name: "Alphabet Inc.",
     current_price: 185.20,
     change_percentage: -0.5,
-    token_address: "COMING SOON",
+    token_address: "0xedc7a4546f35209d5c16662f9348d77156ce04eb",
     market_capitalization: "$2.3T",
     trading_volume_24h: "120M"
   },
@@ -47,7 +47,7 @@ export const market_assets: TokenizedStock[] = [
     company_name: "Amazon.com Inc.",
     current_price: 190.50,
     change_percentage: 1.8,
-    token_address: "COMING SOON",
+    token_address: "0xd127ebee2a34de47734d5b46c9937fb644a7af65",
     market_capitalization: "$1.9T",
     trading_volume_24h: "150M"
   },
@@ -57,7 +57,7 @@ export const market_assets: TokenizedStock[] = [
     company_name: "Meta Platforms",
     current_price: 495.20,
     change_percentage: 3.2,
-    token_address: "COMING SOON",
+    token_address: "0x05e8c16c3e676394baffebc18b5ee2fada7ff308",
     market_capitalization: "$1.2T",
     trading_volume_24h: "140M"
   },
