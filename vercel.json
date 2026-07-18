@@ -1,12 +1,15 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/yahoo/:path*",
-      "destination": "https://query2.finance.yahoo.com/:path*"
+      "src": "/api/yahoo/(.*)",
+      "dest": "https://query2.finance.yahoo.com/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
