@@ -47,11 +47,21 @@ export function StockCard({ asset_data, render_index }: StockCardProps) {
       className="group p-6 border border-white/10 bg-[#0a1224]/50 hover:bg-[#0a1224]/80 hover:border-white/20 transition-all flex flex-col rounded-xl min-h-[220px]"
     >
       <div className="flex justify-between items-start mb-4">
-        <div>
-          <h3 className="font-bold text-lg text-white leading-tight mb-1">
-            {asset_data.company_name}
-          </h3>
-          <p className="text-xs text-zinc-500 font-mono">{asset_data.ticker_symbol}.tok</p>
+        <div className="flex-1 pr-2">
+          <div className="flex items-center gap-3 mb-2">
+            <img 
+              src={`/stocks/${asset_data.ticker_symbol.toLowerCase()}.png`} 
+              alt={asset_data.ticker_symbol} 
+              className="w-8 h-8 rounded-full bg-white object-contain border border-white/20 p-[2px]"
+              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+            />
+            <div>
+              <h3 className="font-bold text-lg text-white leading-tight mb-1">
+                {asset_data.company_name}
+              </h3>
+              <p className="text-xs text-zinc-500 font-mono">{asset_data.ticker_symbol}.tok</p>
+            </div>
+          </div>
         </div>
         <div className="text-right">
           <p className="font-mono text-white text-lg font-medium">
