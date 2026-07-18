@@ -67,7 +67,7 @@ export const market_assets: TokenizedStock[] = [
     company_name: "Tesla Inc.",
     current_price: 250.00,
     change_percentage: -1.2,
-    token_address: "COMING SOON",
+    token_address: "0xce69e587e9fea5dd961e89e8667f264fd95cc7c3",
     market_capitalization: "$800B",
     trading_volume_24h: "300M"
   },
