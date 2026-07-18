@@ -1,0 +1,8 @@
+{
+  "name": "Tokenized Equities Exchange",
+  "description": "A professional trading interface for tokenized stocks, featuring one-click copy functionality and a high-contrast theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
