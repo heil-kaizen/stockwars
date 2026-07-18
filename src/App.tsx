@@ -25,7 +25,13 @@ export default function App() {
           onClick={() => setActivePage('home')}
         >
           <LogoIcon className="w-8 h-8 group-hover:scale-105 transition-transform" />
-          <span className="text-xl font-bold tracking-tighter uppercase">STONKWARZ</span>
+          <span className="text-xl sm:text-2xl font-black italic tracking-tighter uppercase flex items-center">
+            <span>Stonk</span>
+            <span className="relative ml-1 px-2 pt-1 pb-0.5 flex items-center justify-center">
+              <span className="absolute inset-0 bg-[#ccff00] rounded-[2px] -skew-x-[12deg]"></span>
+              <span className="relative text-black leading-none z-10">Warz</span>
+            </span>
+          </span>
         </div>
         
         <div className="flex gap-4 md:gap-10 text-xs md:text-sm font-medium uppercase tracking-widest text-zinc-400">
