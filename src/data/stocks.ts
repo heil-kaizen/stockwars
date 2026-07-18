@@ -120,5 +120,49 @@ export const market_assets: TokenizedStock[] = [
     token_address: "0x0F5b18FDbCA390f75De1b4b52C402fB6a4FeaB76",
     market_capitalization: "$560B",
     trading_volume_24h: "40M"
+  },
+  {
+    identifier: "stk-dummy1",
+    ticker_symbol: "TBD1",
+    company_name: "Mystery Stock",
+    current_price: 0,
+    change_percentage: 0,
+    token_address: "",
+    market_capitalization: "---",
+    trading_volume_24h: "---",
+    is_coming_soon: true
+  },
+  {
+    identifier: "stk-dummy2",
+    ticker_symbol: "TBD2",
+    company_name: "Mystery Stock",
+    current_price: 0,
+    change_percentage: 0,
+    token_address: "",
+    market_capitalization: "---",
+    trading_volume_24h: "---",
+    is_coming_soon: true
+  },
+  {
+    identifier: "stk-dummy3",
+    ticker_symbol: "TBD3",
+    company_name: "Mystery Stock",
+    current_price: 0,
+    change_percentage: 0,
+    token_address: "",
+    market_capitalization: "---",
+    trading_volume_24h: "---",
+    is_coming_soon: true
+  },
+  {
+    identifier: "stk-dummy4",
+    ticker_symbol: "TBD4",
+    company_name: "Mystery Stock",
+    current_price: 0,
+    change_percentage: 0,
+    token_address: "",
+    market_capitalization: "---",
+    trading_volume_24h: "---",
+    is_coming_soon: true
   }
 ];

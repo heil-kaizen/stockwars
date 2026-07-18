@@ -40,16 +40,16 @@ export function MarketsView() {
   const topPickAsset = [...assets].sort((a, b) => b.change_percentage - a.change_percentage)[0];
 
   return (
-    <div className="flex-1 w-full max-w-7xl mx-auto px-6 py-12">
+    <div className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-12">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="mb-12"
+        className="mb-8 md:mb-12"
       >
         <div className="inline-block px-3 py-1 bg-[#ccff00]/10 border border-[#ccff00]/30 rounded text-[#ccff00] text-[10px] font-bold tracking-widest uppercase mb-4 w-fit">
           Official Tournament
         </div>
-        <h2 className="text-4xl md:text-5xl font-black italic tracking-tighter uppercase text-white mb-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black italic tracking-tighter uppercase text-white mb-4">
           Global Top Stocks Tournament
         </h2>
         <p className="text-zinc-400 max-w-2xl text-sm leading-relaxed">

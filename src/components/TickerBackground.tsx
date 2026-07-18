@@ -31,9 +31,10 @@ const TickerRow = ({ direction, duration, data }: { direction: 'normal' | 'rever
 
   return (
     <div 
-      className="flex whitespace-nowrap min-w-max" 
+      className="flex whitespace-nowrap min-w-max will-change-transform" 
       style={{ 
-        animation: `marquee${direction === 'reverse' ? '-reverse' : ''} ${duration}s linear infinite` 
+        animation: `marquee${direction === 'reverse' ? '-reverse' : ''} ${duration}s linear infinite`,
+        transform: 'translateZ(0)'
       }}
     >
       {content}
@@ -44,15 +45,12 @@ const TickerRow = ({ direction, duration, data }: { direction: 'normal' | 'rever
 
 export function TickerBackground() {
   return (
-    <div className="absolute inset-0 overflow-hidden flex flex-col gap-8 md:gap-16 justify-center opacity-[0.25] blur-[2px] pointer-events-none transform -skew-y-[12deg] scale-[1.5] z-0 select-none">
+    <div className="absolute inset-0 overflow-hidden flex flex-col gap-12 md:gap-20 justify-center opacity-[0.10] pointer-events-none transform -skew-y-[12deg] scale-[1.5] z-0 select-none">
       <TickerRow direction="normal" duration={60} data={market_assets} />
       <TickerRow direction="reverse" duration={75} data={market_assets} />
       <TickerRow direction="normal" duration={50} data={market_assets} />
       <TickerRow direction="reverse" duration={80} data={market_assets} />
       <TickerRow direction="normal" duration={65} data={market_assets} />
-      <TickerRow direction="reverse" duration={55} data={market_assets} />
-      <TickerRow direction="normal" duration={70} data={market_assets} />
-      <TickerRow direction="reverse" duration={60} data={market_assets} />
     </div>
   );
 }

@@ -29,7 +29,7 @@ export function TopStocksTicker() {
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }} 
       transition={{ delay: 0.5 }}
-      className="mt-6 flex flex-wrap gap-4 md:gap-6 items-center"
+      className="mt-6 flex flex-wrap gap-4 md:gap-6 items-center justify-center md:justify-start"
     >
       <span className="text-[10px] md:text-xs font-bold text-[#ccff00]/60 uppercase tracking-widest mr-2 border border-[#ccff00]/20 px-2 py-1 rounded">Live Top 5</span>
       {prices.map(p => (

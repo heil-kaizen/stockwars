@@ -27,9 +27,8 @@ export function StockCard({ asset_data, render_index }: StockCardProps) {
     return (
       <motion.div
         initial={{ opacity: 0, y: 15 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "100px" }}
-        transition={{ duration: 0.4, delay: (render_index % 8) * 0.05 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: (render_index % 8) * 0.05 }}
         className="group p-6 border border-white/5 bg-[#0a1224]/30 flex flex-col justify-center items-center h-full min-h-[220px] rounded-xl relative overflow-hidden"
       >
         <div className="absolute inset-0 opacity-[0.03] bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,#fff_10px,#fff_20px)]"></div>
@@ -41,11 +40,10 @@ export function StockCard({ asset_data, render_index }: StockCardProps) {
   const is_positive = asset_data.change_percentage >= 0;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 15 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "100px" }}
-      transition={{ duration: 0.4, delay: (render_index % 8) * 0.05 }}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: (render_index % 8) * 0.05 }}
       className="group p-6 border border-white/10 bg-[#0a1224]/50 hover:bg-[#0a1224]/80 hover:border-white/20 transition-all flex flex-col rounded-xl min-h-[220px]"
     >
       <div className="flex justify-between items-start mb-4">

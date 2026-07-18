@@ -28,9 +28,9 @@ export function HomeView({ onNavigate }: { onNavigate: () => void }) {
           Decentralized Equity Protocol
         </div>
         
-        <h1 className="text-6xl md:text-8xl lg:text-[120px] font-black italic tracking-tighter uppercase mb-2 flex items-center">
+        <h1 className="text-[11vw] sm:text-6xl md:text-8xl lg:text-[120px] font-black italic tracking-tighter uppercase mb-2 flex flex-wrap items-center">
           <span>Stonk</span>
-          <span className="relative ml-4 md:ml-6 px-4 md:px-8 pt-2 pb-1 md:pt-4 md:pb-2 flex items-center justify-center">
+          <span className="relative ml-2 sm:ml-4 md:ml-6 px-4 md:px-8 pt-2 pb-1 md:pt-4 md:pb-2 flex items-center justify-center mt-2 sm:mt-0">
             <span className="absolute inset-0 bg-[#ccff00] rounded-sm -skew-x-[12deg]"></span>
             <span className="relative text-black leading-none z-10">Warz</span>
           </span>
@@ -43,10 +43,10 @@ export function HomeView({ onNavigate }: { onNavigate: () => void }) {
 
         <TopStocksTicker />
 
-        <div className="flex flex-col sm:flex-row gap-4 mt-8">
+        <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
           <button 
             onClick={onNavigate}
-            className="bg-[#ccff00] text-black px-8 py-4 font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-transform cursor-pointer flex items-center justify-center gap-2 w-fit"
+            className="bg-[#ccff00] text-black px-8 py-4 font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-transform cursor-pointer flex items-center justify-center gap-2 w-full sm:w-fit"
           >
             Enter Markets <ArrowRight size={20} />
           </button>
